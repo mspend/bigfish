@@ -1,4 +1,5 @@
-#packages availabe in merfish3d environment
+# packages availabe in merfish3d environment
+# this makes one tiff file for each bit in the tile.
 
 from merfish3danalysis.qi2labDataStore import qi2labDataStore
 from tifffile import TiffWriter
