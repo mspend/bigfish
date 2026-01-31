@@ -16,9 +16,10 @@ def main():
 
     tile_idx = 0
     n_rounds = 8
-    print(range(1, n_rounds))
 
-    for round_idx in range(1, n_rounds):
+    # If I put range(1, n_rounds) it only goes 1=7. But if I put range(1, n_rounds+1), it says list index out of range.
+    for round_idx in range(1, n_rounds+1):
+        print(round_idx)
         round_data = datastore.load_local_registered_image(tile=tile_idx,round=round_idx,return_future=False)
         # print(round_data.dtype)
         print(round_data)
